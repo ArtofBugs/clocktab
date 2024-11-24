@@ -16,7 +16,7 @@ function dom_beat() {
   const countdown_date = new Date(get_option_value("countdown_date"));
 
   let countdown_title = get_option_value("countdown_title");
-  countdown_title = countdown_title.replace(
+  countdown_title = countdown_title.replaceAll(
     "%date",
     new Date().toLocaleDateString()
   );
