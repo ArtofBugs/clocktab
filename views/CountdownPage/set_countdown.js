@@ -22,6 +22,9 @@ function dom_beat() {
   ).replaceAll(
     "%countdown_date",
     countdown_date.toLocaleDateString()
+  ).replaceAll(
+    "%countdown_time",
+    countdown_date.toLocaleTimeString()
   );
 
   const now = new Date();
